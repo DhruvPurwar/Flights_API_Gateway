@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(limiter);
 
-// Check in flights service , we have additional middleware to accept requests from /flightsService
+// Check in flights service , we have additional middleware to accept requests from / flightsService
 app.use(
   "/flightsService",
   createProxyMiddleware({
